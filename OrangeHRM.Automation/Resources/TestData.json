@@ -1,0 +1,9 @@
+{
+  "Login": {
+    "InvalidPasswords": [
+      "WrongPassword123",
+      "InvalidPassword456",
+      "IncorrectPassword789"
+    ]
+  }
+}
