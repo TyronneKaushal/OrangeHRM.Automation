@@ -11,6 +11,11 @@ namespace OrangeHRM.Automation.Drivers
             ?? throw new InvalidOperationException(
                 "WebDriver has not been initialized.");
 
+        public static IWebDriver? TryGetDriver()
+        {
+            return _driver.Value;
+        }
+
         public static void SetDriver(IWebDriver driver)
         {
             _driver.Value = driver;

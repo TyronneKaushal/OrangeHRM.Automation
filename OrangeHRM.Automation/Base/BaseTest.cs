@@ -9,7 +9,7 @@ namespace OrangeHRM.Automation.Base
 {
     public class BaseTest
     {
-        protected IWebDriver Driver => DriverManager.Driver;
+        protected IWebDriver? Driver => DriverManager.TryGetDriver();
         protected ExtentTest ExtentTest = null!;
 
         [SetUp]
