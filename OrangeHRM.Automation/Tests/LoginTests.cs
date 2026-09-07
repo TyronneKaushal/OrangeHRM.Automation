@@ -40,17 +40,5 @@ namespace OrangeHRM.Automation.Tests
 
             errorMessage.Should().Contain("Invalid credentials");
         }
-
-        [Test]
-        public void ScreenshotTest_ShouldFail()
-        {
-            var loginPage = new LoginPage(Driver);
-
-            loginPage.Open();
-
-            Assert.That(
-                Driver.Title,
-                Does.Contain("THIS_WILL_NEVER_MATCH"));
-        }
     }
 }
